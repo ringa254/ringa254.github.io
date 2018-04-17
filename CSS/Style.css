@@ -1,0 +1,210 @@
+body {
+  background-image: url(Icons/Lynn.jpg)no-repeat center center fixed;
+  background-color: #white;
+  margin: 0;
+  background-size: cover;
+  overflow: hidden;
+}
+
+header {
+  display: block;
+  position: relative;
+  background: #FF7F50;
+  color: white;
+  margin: 0 0 0 0;
+}
+
+/* Style the search field */
+
+.search {
+  margin: 8px 0 10px 25px;
+  font-size: 17px;
+  width: 50%;
+  float: left;
+  display: block;
+}
+
+.search input[type=text] {
+  float: left;
+  padding: 6px;
+  padding-bottom: 0;
+  border: none;
+  margin-right: 16px;
+  font-size: 17px;
+  width: 90%;
+}
+
+/* body below header is in class big*/
+
+.big {
+    margin: 3px;
+  border: 3px solid #C0C0C0;
+  background-color: #cee6f2;
+  padding-bottom: 7%;
+}
+
+header h2 {
+  display: inline-block;
+  font-weight: normal;
+  float: center;
+  margin-top: 15px;
+  margin-bottom: 0;
+  font-size: 25px;
+  padding-left: 10px;
+}
+
+header ul {
+  display: inline;
+  float: right;
+  margin-top: 5px;
+  margin-left: auto;
+  margin-bottom: 0;
+  padding-right: 2%;
+}
+
+header ul li {
+  display: inline-block;
+}
+
+header ul li a {
+  color: white;
+  font-weight: normal;
+  font-size: 20px;
+  float: right;
+  margin-bottom: 0;
+}
+
+nav {
+  padding-top: 20%;
+}
+
+nav ul {
+  padding-top: 1%;
+  display: inline-grid;
+  align: center;
+  list-style: none;
+}
+
+nav ul li {
+
+  color: white;
+  border: 2px solid;
+  border-radius: 25px;
+  border-color: #000;
+  padding-bottom: %;
+  width:50%;
+}
+
+nav ul li a {
+  color: white;
+  display: inline-block;
+  width:25%;
+
+}
+
+nav ul li a button {
+  border-radius: 45px;
+  background-color: inherit;
+
+  color: #000;
+}
+
+nav ul li a button img {
+  display: block;
+  margin: 0 auto;
+}
+.well button{
+  width: 180%;
+  height: 120%;
+  color: deepskyblue;
+}
+
+#frame1 {
+  display: block;
+  float: left;
+
+  border: 3px solid #666;
+  border-radius: 35px;
+  border-color: deepskyblue;
+  overflow: auto;
+  background-color: #eef;
+  font-family: tahoma, sans-serif;
+  font-size: 10pt;
+}
+
+#frame2 {
+  display: block;
+  float: right;
+  border: 3px solid #666;
+  border-color: deepskyblue;
+  border-radius: 35px;
+  overflow: auto;
+  background-color: #eef;
+  font-family: tahoma, sans-serif;
+  font-size: 10pt;
+  scroll-behavior: auto;
+}
+
+#frame2 .brag header {
+  border: 2px solid gray;
+  background: inherit;
+  padding: 5%;
+  margin: 0 auto;
+}
+
+.brag {
+    color: white;
+  width: 100%;
+  margin: 20px 5px 0 5px;
+}
+.brag ul {
+  display: block;
+  padding-top: 5%;
+}
+
+.brag ul li {
+  display: inline-block;
+
+}
+.brag ul li img{
+  float: center;
+  width: 60%;
+  padding-top: 300%;
+}
+
+
+
+
+/*styling contents of qchat in frame2*/
+
+#frame2 .qchat header {
+  padding-right:10%;
+}
+#frame2 header h2{
+  padding-bottom:  1%;
+}
+#frame2 header img{
+  float: right;
+  padding-top: 2%;
+}
+#frame2 .qchat {
+
+    color: white;
+  width: 100%;
+  margin: 20px 5px 0 5px;
+}
+.qchat ul {
+  padding-top: 5%;
+  display: block;
+}
+
+.qchat ul li {
+  display: inline-block;
+
+}
+.qchat ul li img{
+  float: center;
+  width: 60%;
+  padding-bottom: 0%;
+  padding-top: 300%;
+}
