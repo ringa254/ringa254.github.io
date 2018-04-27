@@ -7,117 +7,294 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="CSS/bootstrap.min.css">
   <link rel="stylesheet" href="CSS/Style.css" class="css">
+  <!--CSS for modal-->
+  <link href="CSS/modal.css" rel="stylesheet" type="text/css">
+  <!--JavaScript-->
+  <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+  <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="js/modalJS.js"></script>
   <title>Ringa Website</title>
 </head>
 
 <body>
-  <header>
+  <header class="header-01">
     <div class="container-fluid">
-      <div class="row">
-        <div class="search">
-          <input type="text" style="border-radius:30px" placeholder=" Search Ringa" width="40%">
-          <img src="Icons/logo.png" width="39px" alt="Icon" style="float:center">
-        </div>
-        <h2 class="nav-item">Ringa</h2>
-        <ul>
-          <div class="row">
-            <li class="nav-item"><a class="nav-link " href="Settings.html">Settings</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Brag</a></li>
-            <li class="nav-item"><a class="nav-link" href="Qchat.html">QChat</a></li>
-            <li class="nav-item"><a class="nav-link" href="#"><img src="Icons/Settings-icon.png" alt="settings icon" width="20"></a></li>
+      <nav>
+        <div class="row">
+          <div class="search">
+            <input type="text" placeholder=" Search Ringa">
+            <img src="Icons/logo.png" alt="Icon">
           </div>
-        </ul>
-      </div>
+          <h2 class="nav-item">Ringa</h2>
+          <ul>
+            <div class="row">
+              <li class="nav-item"><a class="nav-link " id="myBtn" href="#">Settings</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Brag</a></li>
+              <li class="nav-item"><a class="nav-link" href="Qchat.html">QChat</a></li>
+              <li class="nav-item"><a class="nav-link"><img src="Icons/Settings-icon.png" alt="settings icon" width="20"></a></li>
+            </div>
+          </ul>
+        </div>
+      </nav>
     </div>
   </header>
-
-  <div class="big">
-    <div class="container-fluid">
-      <div class="row" style="padding-top:1.8%">
-        <div class="col-sm-5">
-          <div id="frame1">
-            <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
-            <H1> FOCUS CONTENT TO BE DISPLAYED HERE</H1>
-            <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
-          </div>
+  <div class="container-fluid big">
+    <div class="row" style="padding-top:1.8%">
+      <div class="col-sm-5">
+        <div class="card"><br><br><br><br><br><br><br><br><br><br><br><br>
+          FOCUS CONTENT<br><br><br><br><br><br><br><br><br><br><br><br>
         </div>
-        <div class="col-sm-2">
-          <nav>
-            <div class="row">
+      </div>
+      <div class="col-sm-2" align="center">
+        <ul class="list-unstyled">
+          <li><button class="btn btn-default" id="newsBtn"><img src="Icons/Globe-icon.png" alt=""><p>News</p></button></li>
+          <br>
+          <li><button class="btn btn-default" id="alertsBtn"><img src="Icons/Broadcast icon.png" alt=""><p>Alerts</p></button></li>
+          <br>
+          <li><button class="btn btn-default" id="advertsBtn"><img src="Icons/AdvertsIcon.png" alt=""><p>Adverts</p></button></li>
+          <br>
+          <li><button class="btn btn-lg"><h3>Place ads</h3></button></li>
+          <br>
+          <li>
+            <h6><br>&copy; mTrustQ Ltd 2018<br> info@mtrust.com <br> +254791397753; +2348137876643 <br><br></h6>
+          </li>
+        </ul>
+        <!-- The Settings Modal -->
+        <div id="myModal" class="modal">
 
-              <ul>
-<div class="row-sm-2.5">
-                <li> <a href="#"><button type="button" class="btn btn-default "> <img src="Icons/Globe-icon.png" alt="" width="100%">News
-                 </button> </a></li><br>  </div>
-<div class="row-sm-2.5">
-                <li><a href="#"><button class="btn btn-default" ><img src="Icons/AlertIcon.png" alt="" width="100%">
-                  Alerts</button> </a></li><br>  </div>
-<div class="row-sm-2.5">
-                <li><a href="#"><button class="btn btn-default" ><img src="Icons/AdvertsIcon.png" alt="" width="100%">
-                  Alerts</button> </a></li>  </div>
-              </ul><br>
-              <div class="row-sm-2.5">
-              <div class="well">
-                <button><h4>Place Ads</h2></button>
-              </div><br>  </div>
-              <div class="row-sm-3">
-              <div class="well" style="font-size:90%">
-                @mTrustQ Ltd 2018 info@mtrust.com +254791397753;+2348137876643
-  </div>
-              </div>
-            </div>
-
-          </nav>
-        </div>
-        <div class="col-sm-5">
-          <div id="frame2">
-            <div class="qchat">
-                              <header>
-
-                  <h2>BRAG PAGE</h2>
-                  <a href="">
-                <img src="Icons/Search White icon.png" width="7%" alt="SearchIcon" >
-                  </a>
-                </header>
-                            <ul>
+          <span class="close">&times;</span>
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div class="row-content">
+              <div class="columnleft">
+                <ul class="ulStyle">
+                  <br></br>
+                  <br></br>
+                  <li><input class="inputStyle" onclick="setBrag()" type="image" src="Images/Brag.png" id="Brag" /></li>
+                  <li><input class="inputStyle" onclick="setQChat()" type="image" src="Images/QChat.png" alt="QChat" /></li>
+                  <li><input class="inputStyle" onclick="setNews()" type="image" src="Images/News.png" alt="News" /></li>
+                  <li><input class="inputStyle" onclick="setAlerts()" type="image" src="Images/Alert.png" alt="Alerts" /></li>
+                  <li><input class="inputStyle" onclick="setAdverts()" type="image" src="Images/Advert.png" alt="Adverts" /></li>
                   <li>
-                    <img src="Icons/StartIcon.png" alt="">
-                  </li>
-                  <li>
-                    <img src="Icons/CircleIcon.png" alt="">
-                  </li>
-                  <li>
-                    <img src="Icons/WorkIcon.png" alt="">
-                  </li>
-                  <li>
-                    <img src="Icons/ProfileIcon.png" alt="">
+                    <p class="pStyle"> Settings</p>
                   </li>
                 </ul>
+              </div>
+              <div class="columncenter">
+                <label><h2 class="h2Style" id="title">Brag</h2></label>
+                <p class="pStyle">Privacy: Public or Approved</p>
+              </div>
+              <div class="columnright">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- The News Modal -->
+        <div id="newsModal" class="modal">
+
+          <span class="close">&times;</span>
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div class="row-content">
+              <div class="columnleft">
+                <ul class="ulStyle">
+                  <br></br>
+                  <br></br>
+                  <li><input class="inputStyle" type="image" src="Images/Cnn.png" /></li>
+                  <li><input class="inputStyle" type="image" src="Images/Ktn.png" /></li>
+                  <li><input class="inputStyle" type="image" src="Images/Citizen.png" /></li>
+                  <li><input class="inputStyle" type="image" src="Images/Channels.png" /></li>
+                  <li>
+                    <p class="pStyle"> News</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="columncenter">
+              </div>
+              <div class="columnright">
+                <div class="billboard"></div>
+                <div class="billboard"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- The Alert Modal -->
+        <div id="alertModal" class="modal">
+
+          <span class="close">&times;</span>
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div class="row-content">
+              <div class="columnleft">
+                <ul class="ulStyle">
+                  <br></br>
+                  <br></br>
+                  <li><input class="inputStyle" type="image" src="Images/Kebs.png" /></li>
+                  <li><input class="inputStyle" type="image" src="Images/NTSA.png" /></li>
+                  <li><input class="inputStyle" type="image" src="Images/Kenyapolice.png" /></li>
+                  <li><input class="inputStyle" type="image" src="Images/Pharmacy.png" /></li>
+                  <li><input class="inputStyle" type="image" src="Images/Kmd.png" /></li>
+                  <li>
+                    <p class="pStyle"> Alerts</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="columncenter">
+              </div>
+              <div class="columnright">
+                <div class="billboard"></div>
+                <div class="billboard"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- The Adverts Modal -->
+        <div id="advertModal" class="modal">
+
+          <span class="close">&times;</span>
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div class="row-content">
+              <div class="columnleft">
+                <ul class="ulStyle">
+                  <br></br>
+                  <br></br>
+                  <li><input class="inputStyle" type="image" src="Images/Nigeria.png" /></li>
+                  <li><input class="inputStyle" type="image" src="Images/Kenya.png" /></li>
+                  <li><input class="inputStyle" type="image" src="Images/SouthAfrica.png" /></li>
+                  <li><input class="inputStyle" type="image" src="Images/Tanzania.png" /></li>
+                  <li><input class="inputStyle" type="image" src="Images/Ethiopia.png" /></li>
+                  <li>
+                    <p class="pStyle"> Adverts</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="columncenter">
+              </div>
+              <div class="columnright">
+                <div class="billboard"></div>
+                <div class="billboard"></div>
+                <input class="advertSearch" type="text" placeholder="Search.." onchange="hideIcon(this);">
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <script>
+          // Get the modal
+          var modal = document.getElementById('myModal');
+          var newsmodal = document.getElementById('newsModal');
+          var alertmodal = document.getElementById('alertModal');
+          var advertmodal = document.getElementById('advertModal');
+
+          // Get the button that opens the modal
+          var btn = document.getElementById("myBtn");
+          var btn2 = document.getElementById("newsBtn");
+          var btn3 = document.getElementById("alertsBtn");
+          var btn4 = document.getElementById("advertsBtn");
+
+          // Get the <span> element that closes the modal
+          var span = document.getElementsByClassName("close")[0];
+
+          // When the user clicks the button, open the modal
+          btn.onclick = function() {
+            modal.style.display = "block";
+          }
+          btn2.onclick = function() {
+            newsmodal.style.display = "block";
+          }
+          btn3.onclick = function() {
+            alertmodal.style.display = "block";
+          }
+          btn4.onclick = function() {
+            advertmodal.style.display = "block";
+          }
+
+
+          // When the user clicks on <span> (x), close the modal
+          span.onclick = function() {
+            modal.style.display = "none";
+            newsmodal.style.display = "none";
+            alertmodal.style.display = "none";
+            advertmodal.style.display = "none";
+          }
+
+          // When the user clicks anywhere outside of the modal, close it
+          window.onclick = function(event) {
+            if (event.target == modal) {
+              modal.style.display = "none";
+            } else if (event.target == newsmodal) {
+              newsmodal.style.display = "none";
+            } else if (event.target == alertmodal) {
+              alertmodal.style.display = "none";
+            } else if (event.target == advertmodal) {
+              advertmodal.style.display = "none";
+            }
+
+          }
+          //Set Brag in title
+          function setBrag() {
+            var a = "Brag";
+            //set value
+            document.getElementById('title').innerHTML = a;
+          }
+
+          function setQChat() {
+            var a = "QChat";
+            //set value
+            document.getElementById('title').innerHTML = a;
+          }
+
+          function setAdverts() {
+            var a = "Adverts";
+            //set value
+            document.getElementById('title').innerHTML = a;
+          }
+
+          function setAlerts() {
+            var a = "Alerts";
+            //set value
+            document.getElementById('title').innerHTML = a;
+          }
+
+          function setNews() {
+            var a = "News";
+            //set value
+            document.getElementById('title').innerHTML = a;
+          }
+
+          function hideIcon(self) {
+            self.style.backgroundImage = 'none';
+          }
+        </script>
+      </div>
+      <div class="col-sm-5">
+        <div class="card">
+          <div class="card-header"><ul>
+            <h2 align="center">Brag Page</h2></ul>
+          </div><br><br><br><br><br><br><br><br><br><br><br><br>
+          <div class="card-footer">
+
+            <div class="row-icons">
+              <div class="row" align="center">
+                <div class="col-sm-3"><button class="btn btn-icons"><img src="Icons/Focus-icon.png" alt=""><p>Focus</p></button> </div>
+                <div class="col-sm-3"><button class="btn btn-icons"><img src="Icons/Search icon basic.png" alt=""><p>Search</p></button> </div>
+                <div class="col-sm-3"><button class="btn btn-icons"><img src="Icons/AlertIcon.png" alt=""><p>Broadcast</p></button> </div>
+                <div class="col-sm-3"><button class="btn btn-icons"><img src="Icons/Profile-icon.png" alt=""><p>Profile</p></button> </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <!-- end of row -->
+  </div>
+  <!-- end of container -->
 
-  </div>
-  </div>
-  </div>
-  </div>
-  </div>
-  </div>
-  </div>
 
-</body>
-</body>
 
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
 </body>
 <script src="JS/jquery-3.3.1.min.js"></script>
 <script src="JS/bootstrap.min.js"></script>
