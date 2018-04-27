@@ -1,0 +1,151 @@
+
+body {
+  background-color:white;
+  background-size:cover;
+  /*position:relative;*/
+  /*overflow: hidden;*/
+}
+
+.header-01 {
+  /*display: block;*/
+  background: #FF7F50;
+  color: white;
+  margin: 0 0 0 0;
+}
+
+/* Style the search field */
+
+.search {
+  margin: 0.90% 0 0 25px;
+  font-size: 17px;
+  width: 50%;
+  float: left;
+  display: block;
+}
+
+.search input[type=text] {
+  float: left;
+  padding: 6px;
+  padding-bottom: 0;
+  border: none;
+  margin-right: 16px;
+  font-size: 17px;
+  border-radius:30px;
+  width: 90%;
+}
+
+.search img {
+  float: center;
+  width: 38px;
+}
+
+/* body below .header-01 is in class big*/
+
+.big {
+  margin-top: 2px;
+  border: 5px solid #C0C0C0;
+  background-color: #def3ff ;
+  padding: inherit;
+  position: fixed;
+}
+/*css to Ringa on top screen*/
+.header-01 h2 {
+  display: inline-block;
+  font-weight: normal;
+  float: center;
+  margin-top: 15px;
+  margin-bottom: 0;
+  font-size: 25px;
+}
+/*css to settings upto the settings icon*/
+.header-01 ul {
+  display: inline;
+  float: center;
+  margin-top: 5px;
+  margin-left: auto;
+  margin-bottom: 0;
+  padding-right: 3.5%;
+}
+
+.header-01 ul li {
+  display: inline;
+
+}
+
+.header-01 ul li a {
+  color: white;
+  font-weight: normal;
+  font-size: 20px;
+  float: right;
+}
+/*css to info items; news,alerts and adverts*/
+
+/*css to Place Ads card*/
+.card {
+  border-radius: 30px;
+  float: center;
+  border-color: deepskyblue;
+}
+.btn-default{
+  border-color: #000;
+  border-radius: 15px;
+  width: 50%;
+  height:105px;
+  background-color: inherit;
+}
+.btn-default img{
+  width: 100%;
+}
+.btn-default p{
+  padding-top:15%;
+}
+.btn-lg{
+  background-color:#fff;
+  width: 100%;
+}
+ul li h3{
+  font-size: 25px;
+  color:deepskyblue;
+}
+ul li h6{
+  font-family:sans-serif;
+  font-size: 12px;
+  width: 100%;
+  height: 100%;
+  background-color:#fff;
+}
+.card-.header-01{
+margin: 1% 1.5% 0 1.5%;
+height: 100px;
+border-radius: 20px;
+}
+.card-footer{
+  margin: 20% 0 1% 0;
+  background-color: inherit;
+  height: 100px;
+  border: none;
+  background-image: url("/Icons/Lady footer.png");
+
+}
+.btn-icons{
+  border-radius: 15px;
+  background-color: inherit;
+  border: 2px solid;
+  height: 80%;
+}
+.row-icons{
+  width: 100%;
+  display: inline;
+
+}
+.row-icons img{
+  width: 40%;
+  display: inline;
+}
+.row-icons p{
+  padding-top: 20%;
+}
+.Qsearch{
+  display: block;
+  width: 100%;
+}
