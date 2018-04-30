@@ -46,7 +46,7 @@ body {
   border: 5px solid #C0C0C0;
   background-color: #def3ff ;
   padding: inherit;
-  position: fixed;
+/*   position: fixed; */
 }
 /*css to Ringa on top screen*/
 .header-01 h2 {
